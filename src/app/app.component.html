@@ -1,7 +1,22 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
-  </h1>
- </div>
+<div class="col-xs-12" style="text-align:center">
+<hr>
+<h1> Welcome to {{title}}! </h1>
+<div class="col-xs-3">
+  	<div class="col-xs-12" style="margin-top:32px;">
+  	<button class="btn btn-success" (click)="appServiceEx(true)"> with Using Services</button>
+  	</div>
+  	<div class="col-xs-12" style="margin-top:32px;">
+  	<button class="btn btn-primary" (click)="appParent(true)">with Input Bindings </button>
+  	</div>
+  	<div class="col-xs-12" style="margin-top:28px;">
+  	<button class="btn btn-default"> with Output Binding </button>
+  	</div>
+</div>
+<div class="col-xs-9" >
+	<app-serviceex *ngIf="isServiceEx"></app-serviceex>
+	<app-parent *ngIf="isAppParent"></app-parent>
+	 <!-- <app-serviceex></app-serviceex> -->
+	
+</div>
+</div>
 
