@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+
 
 import { ReferenceService } from './servicesex/reference.service';
 import { AppComponent } from './app.component';
@@ -18,7 +20,7 @@ import { ChildComponent } from './inputoutputbinding/child/child.component';
     ChildComponent
   ],
   imports: [
-    BrowserModule, HttpClientModule
+    BrowserModule, HttpClientModule, FormsModule
   ],
   providers: [ReferenceService],
   bootstrap: [AppComponent]

@@ -10,7 +10,7 @@ export class ReferenceService {
 
     getAllEmployees(): Observable<any> {
         try {
-            return this.http.get('assets/service.json'); // web service API. its pointing to http://localhost:4200/assets/service.json
-           } catch (error) { console.log(error); }
+           return this.http.get('assets/service.json'); // web service API. its pointing to http://localhost:4200/assets/service.json
+        } catch (error) { console.log(error); }
     }
   }

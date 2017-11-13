@@ -29,7 +29,6 @@ sendEmployees() {
   this.referenceService.allEmployeesData = this.employeeData;
 }
 clearEmpData() {
-  this.referenceService.allEmployeesData = null;
   this.employeeData = null;
   this.employeedataSend = false;
 }
