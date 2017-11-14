@@ -4,10 +4,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
 
-import { ReferenceService } from './servicesex/reference.service';
+import { ReferenceService } from './servicesexample/reference.service';
 import { AppComponent } from './app.component';
-import { EmployeeComponent } from './servicesex/employee/employee.component';
-import { ServiceexComponent } from './servicesex/serviceex/serviceex.component';
+import { EmployeeComponent } from './servicesexample/employee/employee.component';
+import { ServiceexComponent } from './servicesexample/serviceex/serviceex.component';
 import { ParentComponent } from './inputoutputbinding/parent.component';
 import { ChildComponent } from './inputoutputbinding/child/child.component';
 

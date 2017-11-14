@@ -7,7 +7,6 @@ import { ReferenceService } from '../reference.service';
   styleUrls: ['./employee.component.css']
 })
 export class EmployeeComponent implements OnInit {
-
   employeeDatachild: any;
   constructor(public referenceService: ReferenceService) { }
 
