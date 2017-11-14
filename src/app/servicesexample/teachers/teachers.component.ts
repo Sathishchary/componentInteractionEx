@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { ReferenceService } from '../reference.service';
 
 @Component({
-  selector: 'app-serviceex',
-  templateUrl: './serviceex.component.html',
-  styleUrls: ['./serviceex.component.css']
+  selector: 'app-teachers',
+  templateUrl: './teachers.component.html',
+  styleUrls: ['./teachers.component.css']
 })
-export class ServiceexComponent implements OnInit {
+export class TeachersComponent implements OnInit {
 
 employeeData: any;
 employeedataSend = false;

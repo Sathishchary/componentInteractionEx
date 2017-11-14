@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { ReferenceService } from '../reference.service';
 
 @Component({
-  selector: 'app-employee',
-  templateUrl: './employee.component.html',
-  styleUrls: ['./employee.component.css']
+  selector: 'app-students',
+  templateUrl: './students.component.html',
+  styleUrls: ['./students.component.css']
 })
-export class EmployeeComponent implements OnInit {
+export class StudentsComponent implements OnInit {
   employeeDatachild: any;
   constructor(public referenceService: ReferenceService) { }
 

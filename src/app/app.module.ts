@@ -6,16 +6,16 @@ import { FormsModule } from '@angular/forms';
 
 import { ReferenceService } from './servicesexample/reference.service';
 import { AppComponent } from './app.component';
-import { EmployeeComponent } from './servicesexample/employee/employee.component';
-import { ServiceexComponent } from './servicesexample/serviceex/serviceex.component';
+import { StudentsComponent } from './servicesexample/students/students.component';
+import { TeachersComponent } from './servicesexample/teachers/teachers.component';
 import { ParentComponent } from './inputoutputbinding/parent.component';
 import { ChildComponent } from './inputoutputbinding/child/child.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EmployeeComponent,
-    ServiceexComponent,
+    StudentsComponent,
+    TeachersComponent,
     ParentComponent,
     ChildComponent
   ],

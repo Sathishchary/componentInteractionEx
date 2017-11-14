@@ -2,16 +2,16 @@
 <table class="table table-striped table-hover table-bordered" style="text-align: center;">
 	<thead>
 		<tr>
-			<th>EMP ID</th>
-			<th>FIRST NAME</th>
-			<th>LAST NAME</th>
+			<th>ID</th>
+			<th>SUBJECT NAME</th>
+			<th>TOTAL PAGES</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr *ngFor="let emp of employeeDatachild">
 			<td>{{emp.id}}</td>
-			<td>{{emp.firstName}}</td>
-			<td>{{emp.lastName}}</td>
+			<td>{{emp.SubjectName}}</td>
+			<td>{{emp.pages}}</td>
 		</tr>
 	</tbody>
 </table>

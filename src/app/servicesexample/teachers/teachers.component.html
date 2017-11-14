@@ -1,0 +1,28 @@
+<div style="text-align:center">
+   <button (click)="getEmployees()" class="btn btn-primary">Get Subjects Here</button>
+   <button *ngIf="employeeData" (click)="sendEmployees()" class="btn btn-primary">Send subjects to students component using Service</button>
+   <h3 *ngIf="employeeData" style="text-align: center">Teachers component. All Subjects here</h3>
+<div *ngIf="employeeData" style="text-align: center">
+<table class="table table-striped table-hover table-bordered" style="text-align: center;">
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>SUBJECT NAME</th>
+			<th>TOTAL PAGES </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let emp of employeeData;">
+			<td>{{emp.id}}</td>
+			<td>{{emp.SubjectName}}</td>
+			<td>{{emp.pages}}</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+  <h3 *ngIf="employeedataSend">Student Component</h3>
+	<app-students *ngIf="employeedataSend"></app-students>
+	<button *ngIf="employeedataSend" class="btn btn-primary"
+	(click)="clearEmpData()" style="margin-top: -7px;">clear All Info</button>
+ </div>
+
