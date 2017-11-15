@@ -1,0 +1,22 @@
+<h2>All Readers Information with books</h2>
+    <h3>Intrested Readers: {{intrestedToRead}} . Not IntrestedReaders: {{notIntrestedToRead}}</h3>
+ <!--  <app-books *ngFor="let reader of readersInfo;let i=index;"
+      [firstname]="reader.firstName" [lastname]="reader.lastName"
+      (onVoted)="onVoted($event)">
+ </app-books> -->
+ <table class="table table-striped table-hover table-bordered" style="text-align: center;">
+	<thead>
+		<tr>
+			<th style="text-align: center;">Readers Information </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let reader of readersInfo">
+		<td>
+		<app-books 
+      [firstname]="reader.firstName" [lastname]="reader.lastName"
+      (onVoted)="onVoted($event)">
+ </app-books></td>
+		</tr>
+	</tbody>
+</table>

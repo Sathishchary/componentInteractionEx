@@ -1,7 +1,7 @@
 [
-    { "id": 1, "SubjectName":"Maths1", "pages": 370 },
-    { "id": 2, "SubjectName":"Maths2", "pages": 350 },
-    { "id": 3, "SubjectName":"English", "pages": 240 },
-    { "id": 4, "SubjectName":"physics", "pages": 250 },
-    { "id": 5, "SubjectName":"Chemistry", "pages": 370 }
+    { "id": 1, "SubjectName":"Maths1", "pages": 370, "prize":200 },
+    { "id": 2, "SubjectName":"Maths2", "pages": 350, "prize":200 },
+    { "id": 3, "SubjectName":"English", "pages": 240,"prize":200 },
+    { "id": 4, "SubjectName":"physics", "pages": 250, "prize":200 },
+    { "id": 5, "SubjectName":"Chemistry", "pages": 370, "prize":200 }
 ]

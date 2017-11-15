@@ -8,29 +8,29 @@ import { ReferenceService } from '../reference.service';
 })
 export class TeachersComponent implements OnInit {
 
-employeeData: any;
-employeedataSend = false;
+subjectInfoDataInTeachers: any;
+subjectInfo = false;
 
 constructor(public referenceService: ReferenceService) { }
 
-getEmployees() {
+getAllSubjects() {
   this.referenceService.getAllEmployees().subscribe(
     (result: any) => {
-      this.employeeData = result;
-      this.referenceService.allEmployeesData = result;
+      this.subjectInfoDataInTeachers = result;   // got the whole subjects data here.
+      this.referenceService.allSubjectInfo = result; // assigning the subject info to reference service 
       console.log(result);
     },
     (error: any) => console.log('error' + error)
 
   );
 }
-sendEmployees() {
-  this.employeedataSend = true;
-  this.referenceService.allEmployeesData = this.employeeData;
+sendSubjects() {
+  this.subjectInfo = true;
+  this.referenceService.allSubjectInfo = this.subjectInfoDataInTeachers;
 }
-clearEmpData() {
-  this.employeeData = null;
-  this.employeedataSend = false;
+clearSubjectsData() {
+  this.subjectInfoDataInTeachers = null;
+  this.subjectInfo = false;
 }
 ngOnInit() {
   // this.getEmployees();

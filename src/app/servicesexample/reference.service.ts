@@ -5,7 +5,7 @@ import { Observable } from 'rxjs/Observable';
 @Injectable()
 export class ReferenceService {
 
-	public allEmployeesData: any;
+	public allSubjectInfo: any;
     constructor(private http: HttpClient) { }
 
     getAllEmployees(): Observable<any> {

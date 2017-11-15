@@ -7,10 +7,10 @@ import { ReferenceService } from '../reference.service';
   styleUrls: ['./students.component.css']
 })
 export class StudentsComponent implements OnInit {
-  employeeDatachild: any;
+  subjectInfoInStudents: any;
   constructor(public referenceService: ReferenceService) { }
 
   ngOnInit() {
-    this.employeeDatachild = this.referenceService.allEmployeesData;
+    this.subjectInfoInStudents = this.referenceService.allSubjectInfo;
   }
 }

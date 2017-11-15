@@ -10,6 +10,8 @@ import { StudentsComponent } from './servicesexample/students/students.component
 import { TeachersComponent } from './servicesexample/teachers/teachers.component';
 import { ParentComponent } from './inputoutputbinding/parent.component';
 import { ChildComponent } from './inputoutputbinding/child/child.component';
+import { BooksComponent } from './binding/books/books.component';
+import { ReadersComponent } from './binding/readers/readers.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { ChildComponent } from './inputoutputbinding/child/child.component';
     StudentsComponent,
     TeachersComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    BooksComponent,
+    ReadersComponent
   ],
   imports: [
     BrowserModule, HttpClientModule, FormsModule

@@ -8,10 +8,14 @@
   	<div class="col-xs-12" style="margin-top:32px;">
   	<button class="btn btn-primary" (click)="appParent(true)">Input Output Bindings </button>
   	</div>
+  	<div class="col-xs-12" style="margin-top:32px;">
+  	<button class="btn btn-primary" (click)="appReader(true)"> Bindings </button>
+  	</div>
 </div>
 <div class="col-xs-9" >
 	<app-teachers *ngIf="isServiceEx"></app-teachers>
 	<app-students *ngIf="isAppParent"></app-students>
+	<app-readers *ngIf="isReader"></app-readers>
 </div>
 </div>
 

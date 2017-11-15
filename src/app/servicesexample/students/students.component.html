@@ -1,17 +1,19 @@
-<div *ngIf="employeeDatachild" style="text-align: center">
+<div *ngIf="subjectInfoInStudents" style="text-align: center">
 <table class="table table-striped table-hover table-bordered" style="text-align: center;">
 	<thead>
 		<tr>
-			<th>ID</th>
-			<th>SUBJECT NAME</th>
-			<th>TOTAL PAGES</th>
+			<th style="text-align: center;">ID</th>
+			<th style="text-align: center;">SUBJECT NAME</th>
+			<th style="text-align: center;">TOTAL PAGES</th>
+			<th style="text-align: center;">BOOk PRIZE (Rs)</th>
 		</tr>
 	</thead>
 	<tbody>
-		<tr *ngFor="let emp of employeeDatachild">
-			<td>{{emp.id}}</td>
-			<td>{{emp.SubjectName}}</td>
-			<td>{{emp.pages}}</td>
+		<tr *ngFor="let subject of subjectInfoInStudents">
+			<td>{{subject.id}}</td>
+			<td>{{subject.SubjectName}}</td>
+			<td>{{subject.pages}}</td>
+			<td>{{subject.prize}}</td>
 		</tr>
 	</tbody>
 </table>
