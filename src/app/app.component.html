@@ -1,22 +1,37 @@
 <div class="col-xs-12" style="text-align:center">
-<hr>
-<h1> Welcome to {{title}}! </h1>
-<div class="col-xs-3">
+<h1 style="background: #ffd699;"> Welcome to {{title}}! </h1>
+<div class="col-xs-3" style="background: #f5d8d8;margin-top: -7px;">
   	<div class="col-xs-12" style="margin-top:32px;">
-  	<button class="btn btn-success" (click)="appServiceEx(true)"> with Using Services</button>
+  	<button class="btn btn-success" style="width: 189px;" (click)="serviceExampleData(true)"> with Using Services</button>
   	</div>
   	<div class="col-xs-12" style="margin-top:32px;">
-  	<button class="btn btn-primary" (click)="appParentchild(true)">Input Output Bindings </button>
+  	<button class="btn btn-primary" (click)="parentToChildData(true)">Data From Parent to Child </button>
   	</div>
   	<div class="col-xs-12" style="margin-top:32px;">
-  	<button class="btn btn-primary" (click)="appReader(true)">parent child events Bindings </button>
+  	<button class="btn btn-success" (click)="readerinfoData(true)">parent child events Binding </button>
+  	</div>
+  	<div class="col-xs-12" style="margin-top:32px;">
+  	<button class="btn btn-primary" style="width: 189px;" (click)="viewChildexampleData(true)">View child Example </button>
+  	</div>
+  	  <div class="col-xs-12" style="margin-top:32px;">
+  	<button class="btn btn-success" style="width: 190px;font-size: 13px;" (click)="viewChildexampleLocal(true)">ViewChild with LocalVariable </button>
   	</div>
 </div>
 <div class="col-xs-9" >
-	<app-teachers *ngIf="isServiceEx"></app-teachers>
-	<app-students *ngIf="isAppParent"></app-students>
-	<app-parent *ngIf="isAppParentChild"></app-parent>
-	<app-readers *ngIf="isReader"></app-readers>
+    <!-- service example using -->
+	<app-teachers *ngIf="serviceExample"></app-teachers>
+	<app-students *ngIf="serviceExample"></app-students>
+	<!-- service closed -->
+	<!-- parent child events   -->
+	<app-readers *ngIf="readerinfo"></app-readers>
+	<!-- end parent to child events -->
+	
+	<!-- view child example  -->
+	<app-count *ngIf="viewChildExample"></app-count>
+	<!--view child closed  -->
+	<!-- local variable -->
+	<app-timer *ngIf="viewchildLocal"></app-timer>
+	<!--  -->
 </div>
 </div>
 

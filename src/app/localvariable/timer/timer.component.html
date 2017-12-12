@@ -1,0 +1,5 @@
+<h4>viewchild local variable ..Count example(via local variable)</h4>
+  <button (click)="timer.start()">Start</button>
+  <button (click)="timer.stop()">Stop</button>
+  <div class="seconds">{{timer.seconds}}</div>
+  <app-timer-child #timer></app-timer-child>
