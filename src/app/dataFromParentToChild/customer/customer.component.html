@@ -1,3 +1,19 @@
-<p>
-  customer works!
-</p>
+<table class="table tgrid">
+	<thead>
+		<tr>
+			<th class="headerCss center">Customer Name</th>
+			<th class="headerCss center">Item Name</th>
+			<th class="headerCss center">Price</th>
+			<th class="headerCss center">DELETE</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let item of allItems;" >
+		    <td class="center">{{item.itemName}} </td>
+			<td class="center">{{item.itemName}} </td>
+			<td class="center">{{item.price}}</td>
+			<td class="center"><button class="btn btn-danger" (click)="deleteItem(item)">Del</button></td>
+		</tr>
+	</tbody>	
+</table>								
+					

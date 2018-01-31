@@ -1,3 +1,30 @@
-<p>
-  shop works!
-</p>
+<div>{{shopName}}</div>  
+<p style="text-align:left"> parent component</p>
+<button class="btn btn-primary"  style="float:right" (click)="creteItem()">Create Item</button>
+<div *ngIf="itemClicked" class="col-xs-12">
+		<form style="padding: 66px;margin: -58px;" #myForm="ngForm" (ngSubmit)="saveItemToCustomer()">
+			<div class="form-group">
+				<label class="control-label">To Customer</label>
+				<input class="form-control form-control-solid placeholder-no-fix"
+					name="username" [(ngModel)]="item.customerName"/>
+			</div>
+			<div class="form-group">
+				<label class="control-label">Item Name</label>
+				<input class="form-control form-control-solid placeholder-no-fix"
+					name="password" [(ngModel)]="item.itemName"/>
+      </div>
+        <div class="form-group">
+				<label class="control-label">price </label>
+				<input type="number" class="form-control form-control-solid placeholder-no-fix"
+					name="itemPrice" [(ngModel)]="item.price"/>
+			</div>
+      <button type="submit" class="btn btn-success uppercase" >Save</button>
+      <button type="cancel" class="btn btn-alert uppercase">Cancel</button>
+		</form>
+</div>  
+
+<div  style="margin-top: 50px; text-align: left;">
+ child component
+  <hr >
+  <app-customer [allItems]="allItems" (notifyParent)="update($event)"></app-customer>
+</div>

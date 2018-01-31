@@ -14,28 +14,27 @@ export class AppComponent implements OnInit {
     viewchildLocal = false;
     constructor() { }
 
-    settingBooleanValues(serviceevent:boolean,parenttochild:boolean,readersinfo:boolean,viewchildex:boolean,viewchildlocal:boolean) {
+    settingValues(serviceevent: boolean, parenttochild: boolean, readersinfo: boolean, viewchildex: boolean, viewchildlocal: boolean) {
         this.serviceExample = serviceevent;
         this.parentToChild = parenttochild;
         this.readerinfo = readersinfo;
         this.viewChildExample = viewchildex;
         this.viewchildLocal = viewchildlocal;
-        
     }
     serviceExampleData(event) {
-        this.settingBooleanValues(event, false, false, false, false);
+        this.settingValues(event, false, false, false, false);
     }
     parentToChildData(event) {
-        this.settingBooleanValues(false, event, false, false, false);
+        this.settingValues(false, event, false, false, false);
     }
     readerinfoData(event) {
-        this.settingBooleanValues(false, false, event, false, false);
+        this.settingValues(false, false, event, false, false);
     }
     viewChildexampleData(event) {
-        this.settingBooleanValues(false, false, false, event, false)
+        this.settingValues(false, false, false, event, false);
     }
     viewChildexampleLocal(event) {
-        this.settingBooleanValues(false, false, false, false, event);
+        this.settingValues(false, false, false, false, event);
     }
     ngOnInit() {
     }

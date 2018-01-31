@@ -2,11 +2,10 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-count-child',
-  template: '<p>{{message}}</p> <b>{{messagecount}}</b>'
+  template: '<b>{{messagecount}}</b>'
 })
 export class CountChildComponent {
 
-  message = '';
   messagecount = '';
   count = 0;
   constructor(){
